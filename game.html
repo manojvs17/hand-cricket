@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css" type="text/css">
+</head>
+<body>
+    <canvas id="confetti"></canvas>
+    <section id="tossSection">
+        <div id="tosscontainer">
+            <p>Hand Cricket</p>
+            <h1>Choose your call</h1>
+            <h2>"Head or Tail"</h2>
+            <select name="call" id="call">
+                <option value="Heads">Head</option>
+                <option value="Tails">Tail</option>
+            </select>
+            <button onclick="toss()" id="tossBtn">Toss</button>
+        </div>
+        <div id="tossResult"></div>
+        <div id="batbowl">
+            <div class="buttons">
+                <button onclick="battingbowling('Bat')" id="bat">Bat</button>
+                <button onclick="battingbowling('Bowl')" id="bowl">Bowl</button>
+            </div>
+        </div>
+        <div id="tossLoss">
+            <div class="buttons">
+                <button id="continue" onclick="comptoss()">Continue</button>
+            </div>
+        </div>
+    </section>
+    <section id="mainSection">
+        <div class="heading">
+            <h1>Hand Cricket</h1>
+        </div>
+        <div class="content">
+        <div class="batbowl">
+            <div><h1>Batting: <span id="batStatus">You</span></h1></div>
+            <div><h1>Bowling: <span id="bowlStatus">Computer</span></h1></div>
+        </div>
+        <div class="position">
+            <h1>You are <span id="status">Batting</span> Now!!!!</h1>
+        </div>
+        <div class="both-choices">
+            <div class="my-choice">
+                <img src="../Images/user.png" alt="You">
+                <div class="user">
+                <h2>My Choice</h2>
+               <span id="myChoice">0</span>
+                </div>
+            </div>
+            <div id="targetruns">
+                <h1>Target Runs</h1>
+                <span id="Target">0</span>
+            </div>
+            <div class="computer-choice">
+                <img src="../Images/bot.png" alt="Bot">
+                <div class="bot">
+                    <h2>Computer Choice</h2>
+                    <span id="computerChoice">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="totalruns">
+            <h1><span id="compbat"></span> Total Runs</h1>
+            <span id="totalRun">0</span>
+        </div>
+        <div class="choices">
+            <div class="manual-choosing">
+                <h2>Choose Run:</h2>
+                <div class="runbuttons">
+                    <button onclick="choiceChoosen(1)">1</button>
+                    <button onclick="choiceChoosen(2)">2</button>
+                    <button onclick="choiceChoosen(3)">3</button>
+                    <button onclick="choiceChoosen(4)">4</button>
+                    <button onclick="choiceChoosen(5)">5</button>
+                    <button onclick="choiceChoosen(6)">6</button>
+                </div>
+            </div>   
+        </div>
+        <div class="results">
+                <h1>Ball Result</h1>
+                <span id="ballResult">All ready</span>           
+        </div>
+    </div>
+    </section>
+    <section id="out">
+        <div class="totalruns">
+            <h1><span id="compbat"></span> Total Runs</h1>
+            <span id="finalRun">0</span>
+        </div>
+        <span id="outResult"><h1>Oh No!!! That Out, Clean Bowled</h1></span>
+        <button id="nextin" onclick="secondinnings()">Next Innings</button>
+    </section>
+    <div id="matchResult">
+    </div>
+    <div class="backButton">
+        <a href="home.html" id="backButton" class="back-btn btn-1">Back</a>
+    </div>
+    <footer>
+        <h3>This game is designed By Manoj V S</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

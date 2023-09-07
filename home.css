@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Placing container to center */
+body{ 
+    margin: 3em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+section{
+    
+    height:fit-content;
+    width: auto;
+    border: 25px solid black;
+    padding: 3em;
+}
+
+/* Designing Heading */
+.heading{
+    text-align:center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.heading>h3{
+    font-style: italic;
+    font-size: 1.5em;
+}
+.heading>h1{
+    color: green;
+    font-size: 3em;
+}
+
+/* Designing Rules section */
+.rules>ul{
+    display: flex;
+    flex-direction: column;
+}
+.rules>ul>li{
+    margin-bottom: 1em;
+    word-spacing: 2px;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rules>h4{
+    color: blue;
+    font-size: 2em;
+}
+.rules>h3{
+    font-size: 2em;
+}
+/* Designing to play part */
+.toplay{
+    margin-top: 2%;
+    text-align: center;
+}
+.toplay>h4{
+    font-size: 1.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;   
+}
+/* Designing Play Button */
+.toplay>a{
+    text-decoration:none;
+    display: inline-block;
+    padding: .5%;
+    border:5px solid black;
+    border-radius:15px ;
+    margin-top: 1%;
+    font-weight:bold;
+    font-size: 1.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition:0.3s;
+}
+.toplay>a:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}

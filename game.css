@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+#mainSection{
+    display: none;
+}
+                                            /* Placing container to center */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#tossSection{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  13px 13px 26px #777777,
+             -13px -13px 26px #ffffff;
+}
+
+
+                                                /* Designing Toss Container part */
+#tosscontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    align-items: center;
+    justify-content: center;
+}
+#call{
+    margin-top: 1em;
+    padding: .5em;
+}
+#tosscontainer>select{
+    border-radius: 5px;
+    padding:.5em 3em ;
+    font-size: 1.2em;
+}
+#tosscontainer>p{
+    font-size: 4em;
+    border-bottom: 3px solid black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+#tosscontainer>h1{
+    font-size: 2em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+#tosscontainer>h2{
+    margin-top: .3em;
+    color: blue;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 1px;
+}
+/* Design Toss Button */
+#tosscontainer>button{
+    margin: 1em;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding:.4em .9em;
+    border-radius: 10px;
+    background:black;
+ }
+                                            /* designing toss result */
+ #tossResult{
+    display: none;
+    margin: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 2px;    
+ }
+
+ /* designing bat/bowl buttons */
+ #batbowl{
+    display:none;
+ }
+ .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1em;
+ }
+ #bat,#bowl{
+    padding: 5px 30px;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 2px;
+ }
+ /* designing tossLoss */
+ #tossLoss{
+    display: none;
+ }
+ #continue{
+    text-decoration: none;
+    padding: 5px 30px;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 2px;
+ }
+
+ #matchResult{
+    display: none;
+    font-size: 3em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+ }
+
+
+                                                    /* Placing section to center */
+
+section{
+    height: auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+                                                        /* Heading Design */
+.heading{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 10px solid black;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    border-radius: 30px;
+    text-shadow: 3px 2px 1px white;
+}
+                                                        /* Content Design */
+.content{
+    border-radius: 20px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  13px 13px 26px #777777,
+             -0px -0px 26px #ffffff;
+}
+                                                        /* Bat/Bowl Status */
+.batbowl{
+    margin: 0em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.batbowl>div{
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.batbowl>div>h1>span{
+    color: rgb(187, 11, 11);
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.position{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.4em;
+
+    color: blue;
+    border-top: 3px solid black;
+}
+                                                /* Total Runs Design */
+.totalruns{
+    padding: 1em 0px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.totalruns>span{
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0em 1.4em;
+    border: 3px solid black;
+}
+.totalruns>h1{
+    font-size: 1.7em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+#targetruns{
+    display: none;
+    padding: .5em 1em;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px black;
+}
+#targetruns>h1{
+    font-size: 1.7em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+#Target{
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+}
+
+                                                    /* Choices Design */
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.manual-choosing{
+    height: 5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+.runbuttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.runbuttons>button{
+    box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 25px;
+    margin: .5em;
+}
+.both-choices{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: space-around;
+    border-top: 3px solid black;
+}
+.my-choice,.computer-choice{
+    display:flex;
+    flex-wrap: wrap;
+}
+#myChoice,#computerChoice{
+    margin-top: .2em;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0em 1.4em;
+    border: 3px solid black;
+}
+.user,.bot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user,.bot>h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+
+}
+img{
+    margin: 1em;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 50px;
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+
+                                                   /* Results Design */
+.results{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: .4em 0em;
+    font-size: 1.3em;
+    border-radius: 15px;
+}
+.results>h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 1px;
+    color: green;
+}
+.results>span{
+    font-family: 'Damion', cursive;
+    font-size: 1.7em;
+}
+#out{
+    display: none;
+    height: fit-content;
+    width: fit-content;
+    padding: 0em 3em;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  13px 13px 26px #777777,
+             -13px -13px 26px #ffffff;
+}
+#out>button{
+    padding: 5px 30px;
+    border:5px double blue;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    letter-spacing: 2px;
+    margin:1em 0em;
+    cursor:pointer;
+}
+#out>.totalruns{
+    border: none;
+}
+#outResult>h1{
+    color: red;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+                                                    /* Back Button design */
+.backButton{
+    margin:1em;
+}
+.backButton>a{
+   border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid black;
+    background-color:white;
+    padding: 5px 25px;
+}
+.back-btn {
+    color: #fff;
+    padding: 10px 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+   }
+.btn-1 {
+    background: rgb(6,14,131);
+    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+    border: none;
+   }
+  .btn-1:hover {
+    background: rgb(0,3,255);
+    background: linear-gradient(0deg, rgb(0, 17, 255) 0%, rgba(2,126,251,1) 100%);
+   }
+                                                /* Footer Design */
+footer{
+    width: 100%;
+    padding: .5em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
