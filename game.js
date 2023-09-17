@@ -204,8 +204,8 @@ function secondBallResult(computerChoosenValue,myChoice){
         document.getElementById('matchResult').style.display='block';
         document.getElementById('backButton').innerHTML='Play Again';
         if(secondInningsScore>targetScore){
-            jsConfetti.addConfetti();
             if(secondBatter==="You"){
+            jsConfetti.addConfetti();
             return `Victory!!!!! <br >You have chased the target with ease`;
             }
             else{
@@ -217,8 +217,8 @@ function secondBallResult(computerChoosenValue,myChoice){
             return "Match Drawn! So Close! Both have Given their Best";
         }
         else{
-            jsConfetti.addConfetti();
             if(secondBowler==="You"){
+            jsConfetti.addConfetti();
             return `Win!! Good Bowling! <br> You have defended the runs Successfully`;
             }
             else{
