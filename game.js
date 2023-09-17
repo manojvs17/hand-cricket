@@ -205,7 +205,12 @@ function secondBallResult(computerChoosenValue,myChoice){
         document.getElementById('backButton').innerHTML='Play Again';
         if(secondInningsScore>targetScore){
             jsConfetti.addConfetti();
-            return `Victory!!!!! ${secondBatter} have chased the target with ease`;
+            if(secondBatter==="You"){
+            return `Victory!!!!! <br >You have chased the target with ease`;
+            }
+            else{
+                return `You Lose!!!!! <br> Computer have chased the target with ease`;  
+            }
         }
         else if(secondInningsScore==targetScore)
         {
@@ -213,8 +218,12 @@ function secondBallResult(computerChoosenValue,myChoice){
         }
         else{
             jsConfetti.addConfetti();
-            return `Win!!! Good Bowling ${secondBowler} have defended the runs Successfully`;
-            
+            if(secondBowler==="You"){
+            return `Win!! Good Bowling! <br> You have defended the runs Successfully`;
+            }
+            else{
+            return `Lose! Computer have defended the runs Successfully`;   
+            }
         }
     }    
 }

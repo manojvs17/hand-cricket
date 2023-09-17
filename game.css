@@ -387,3 +387,84 @@ footer{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
+
+@media screen and (max-width:700px) {
+    #tosscontainer>p{
+        font-size: 3em;
+    }
+    .content{
+        border-radius: 15px;
+        padding: .5em;
+        box-shadow:  10px 10px 26px #777777,
+                 -0px -0px 26px #ffffff;
+    }
+    .heading{
+        margin-top: 2em;
+        font-size: 1.5em;
+        text-shadow: 3px 1px 1px white;
+    }
+    .batbowl{
+        margin:.5em;
+    }
+    .batbowl>div{
+        font-size: 1em;
+    }
+    .position{
+        font-size: 1.1em;
+    }
+
+    .totalruns{
+        padding: 1em 0px;
+    }
+    .totalruns>span{
+        font-size: 1.6em;
+        padding: 0em 1.4em;
+    }
+    .totalruns>h1{
+        font-size: 1.5em;
+    }
+    #targetruns{
+        padding: .3em .5em;
+        border-radius: 15px;
+    }
+    #targetruns>h1{
+        font-size: 1.5em;
+    }
+    #Target{
+        font-size: 1.8em;
+        color: red;
+        font-weight: bold;
+    }
+    
+
+    .both-choices{
+        flex-direction: column;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    #computerChoice{
+        font-size: 2em;
+    }
+    .user,.bot>h2{
+        font-size: 1.1em;
+    }
+
+    .manual-choosing{
+        height: fit-content;
+    }
+    .results>h1{
+       font-size: 1.3em;
+    }
+    .results>span{
+        font-size: 1.3em;
+    }
+
+    #matchResult{
+        border: 5px solid;
+        border-radius: 10px;
+        padding: .2em;
+        font-size: 2.3em;
+     }
+}
